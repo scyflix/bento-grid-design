@@ -10,6 +10,7 @@
       }
 
       body {
+        background: hsla(255, 88%, 90%, 0.295);
         font-family: "DM Sans", sans-serif;
         color: hsl(0, 0%, 7%);
       }
@@ -30,7 +31,7 @@
       }
       .grid {
         max-width: 1000px;
-        margin: 0 auto;
+        margin: 100px auto 0;
         display: grid;
         grid-template-columns: 220px minmax(780px, 1fr);
         grid-template-rows: auto auto auto;
@@ -65,9 +66,7 @@
         background-color: hsl(254, 88%, 90%);
         padding: 9px 0 0 4px;
       }
-      .gridTop section:nth-child(2) h2 {
-        text-align: center;
-      }
+      
       .grid1Inner1 section:nth-child(1) {
         background: hsl(31, 66%, 93%);
       }
