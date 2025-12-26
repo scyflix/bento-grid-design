@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <title>Bento Grid</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: #f6f6f6;
+      padding: 40px;
+    }
+
+    .grid {
+      max-width: 1440px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 260px 1fr 260px;
+      grid-template-rows: auto auto auto;
+      gap: 32px;
+    }
+
+    .card {
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    /* LEFT COLUMN */
+    .create {
+      background: hsl(31, 66%, 93%);
+    }
+
+    .create span {
+      color: hsl(256, 67%, 59%);
+    }
+
+    .ai {
+      background: hsl(39, 100%, 71%);
+    }
+
+    /* CENTER COLUMN */
+    .hero {
+      grid-column: 2;
+      background: hsl(256, 67%, 59%);
+      color: white;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 160px;
+      margin: 16px auto;
+    }
+
+    .platforms {
+      grid-column: 2;
+      background: white;
+    }
+
+    .schedule {
+      grid-column: 2;
+      background: hsl(39, 100%, 71%);
+    }
+
+    .stats {
+      grid-column: 2;
+      background: white;
+    }
+
+    /* RIGHT COLUMN */
+    .timing {
+      grid-column: 3;
+      grid-row: 1 / span 2;
+      background: hsl(254, 88%, 90%);
+    }
+
+    /* BOTTOM PURPLE — THIS IS THE “MAGIC” CARD */
+    .grow {
+      grid-column: 2 / 4;
+      background: hsl(256, 67%, 59%);
+      color: white;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .grow img {
+      width: 160px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="grid">
+
+    <!-- LEFT -->
+    <div class="card create">
+      <h2>Create and schedule content <span>quicker.</span></h2>
+      <img src="assets/images/illustration-create-post.webp" />
+    </div>
+
+    <div class="card ai">
+      <h2>Write your content using AI.</h2>
+      <img src="assets/images/illustration-ai-content.webp" />
+    </div>
+
+    <!-- CENTER -->
+    <div class="card hero">
+      <h2>Social Media 10x Faster with AI</h2>
+      <img src="assets/images/illustration-five-stars.webp" />
+      <p>Over 4,000 5-star reviews</p>
+    </div>
+
+    <div class="card platforms">
+      <img src="assets/images/illustration-multiple-platforms.webp" />
+      <h2>Manage multiple accounts and platforms.</h2>
+    </div>
+
+    <div class="card schedule">
+      <h2>Maintain a consistent posting schedule.</h2>
+      <img src="assets/images/illustration-consistent-schedule.webp" />
+    </div>
+
+    <div class="card stats">
+      <h2>&gt;56%</h2>
+      <p>faster audience growth</p>
+      <img src="assets/images/illustration-audience-growth.webp" />
+    </div>
+
+    <!-- RIGHT -->
+    <div class="card timing">
+      <h2>Schedule to social media.</h2>
+      <img src="assets/images/illustration-schedule-posts.webp" />
+      <p>Optimize post timings to publish content at the perfect time.</p>
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="card grow">
+      <img src="assets/images/illustration-grow-followers.webp" />
+      <h2>Grow followers with non-stop content.</h2>
+    </div>
+
+  </div>
+
+</body>
+</html>
