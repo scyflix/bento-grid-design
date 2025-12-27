@@ -55,7 +55,7 @@
       .gridUpper {
         display: grid;
         grid-template-rows: minmax(100px, 1fr) 200px;
-        gap: 10px;
+        gap: 30px;
       }
       .grid1Inner2 > section:first-child {
         padding: 32px;
@@ -133,7 +133,7 @@
         overflow: hidden;
         width: 100%;
         border-radius: 8px;
-        padding: 5px 4px 0 15px;
+        padding: 25px 4px 5px 15px;
       }
       .grid1Inner1 section {
         padding: 35px 4px 0 15px;
@@ -170,7 +170,7 @@ width: 80%;
         color: hsl(256, 67%, 59%);
       }
 
-      @media (max-width: 375px) {
+      @media (max-width: 600px) {
         .grid {
           grid-template-columns: 1fr;
         }
