@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Solution.jpg)
+![Design preview for the coding challenge](./Solution.jpeg)
 
 ### Links
 
